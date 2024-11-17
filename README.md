@@ -23,11 +23,11 @@ This is a solution to the [Newsletter sign-up form with success message challeng
   Live Site URL: [Live Demo](https://lovely-hummingbird-cc042d.netlify.app/)
 
   - [Built With] :
-   - Semantic HTML5 markup
-   - CSS custom properties
-   - Flexbox
-   - CSS Grid
-   - JavaScript (ES6+)
-   
+     -Semantic HTML5 markup
+     -CSS custom properties
+     -Flexbox
+     -CSS Grid
+     -JavaScript (ES6+)
+
 - [Author]
   - Frontend Mentor: [@manarbooo](https://www.frontendmentor.io/profile/manarbooo)
