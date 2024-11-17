@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --Tomato: hsl(4, 100%, 67%);
+    --Dark_Slate_Grey: hsl(234, 29%, 20%);
+    --Charcoal_Grey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body{
+    background-color: var(--Charcoal_Grey);
+    font-family: "Plus Jakarta Sans", sans-serif;
+    height: 110vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container{
+    background-color: var(--White);
+    width: 850px;
+    height: 550px;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.textContent{
+    display: flex;
+    flex-direction: column;
+    width: 52%;
+    margin-right: 15px;
+}
+
+.mainHeading{
+    font-size: 50px;
+    font-weight: 750;
+    margin-left: 35px;
+    margin-bottom: 5px;
+    margin-top: -10px;
+}
+
+.description{
+    width: 88%;
+    margin-left: 35px;
+    font-weight: 550;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+
+.offerList{
+    margin-bottom: 30px;
+}
+
+.listItem{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: 550;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.listIcon{
+    margin-right: 12px;
+}
+
+
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+label{
+    font-weight: 750;
+    margin-left: 30px;
+    margin-bottom: 0;
+    margin-top: 10px;
+
+}
+
+.emailInput{
+    width: 85%;
+    height: 44px;
+    margin-left: 30px;
+    border-radius: 5px;
+    border: 1px solid var(--Grey);
+    padding-left: 20px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    margin-top: 20px;
+    margin-bottom: -10px;
+}
+
+.btn{
+    width: 90%;
+    height: 48px;
+    background-color: var(--Dark_Slate_Grey);
+    color: var(--White);
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 550;
+    margin-left: 30px;
+    border-radius: 5px;
+    margin-top: 20px;
+    border: none;
+    
+}
+
+
+.btn:hover{
+    background: linear-gradient(204.47deg, #ff6a3a 0%, #ff527b 100%);
+    box-shadow: 0 1rem 2rem rgba(255, 97, 85, 0.5);
+    cursor: pointer;
+}
+
+.mainIllustration{
+    width: 43%;
+    height: 95%;
+    margin-right: auto;
+    background-image: url(assets/images/illustration-sign-up-desktop.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+
+}
+
+
+.errorSpan{
+    color: red;
+    font-size: 14px;
+    margin-left: 130px;
+    visibility: hidden;
+}
+
+
+.successDivContainer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--Charcoal_Grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1000;
+    transition: visibility 0s, opacity 0.3s;
+    visibility: hidden;
+}
+
+
+
+.successDiv{
+    width: 450px;
+    height: 450px;
+    background-color: var(--White);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+
+}
+
+.successIcon{
+    margin-top: 30px;
+    margin-left: -260px;
+}
+
+.successHeading{
+    font-size: 44px;
+    font-weight: 750;
+    margin-left: 40px;
+    line-height: 1;
+}
+
+.successDesc{
+    font-weight: 500;
+    font-size: 14px;
+    margin-left: -15px;
+    width: 75%;
+    line-height: 1.6;
+}
+
+.successBtn{
+    width: 350px;
+    height: 45px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--Dark_Slate_Grey);
+    color: var(--White);
+    font-family: "Plus Jakarta Sans", sans-serif;
+    margin-top: 5px;
+}
+
+.successBtn:hover{
+    background: linear-gradient(204.47deg, #ff6a3a 0%, #ff527b 100%);
+    box-shadow: 0 1rem 2rem rgba(255, 97, 85, 0.5);
+    cursor: pointer;
+}
+
+.successSpan{
+    font-weight: 700;
+}
+
+
+
+@media screen and (max-width: 768px){
+    body{
+        background-color: var(--Charcoal_Grey);
+        font-family: "Plus Jakarta Sans", sans-serif;
+        height: 110vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .container{
+        background-color: var(--White);
+        width: 100%;
+        height: 170vh;
+        border-radius: 0;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+
+    .textContent{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-right: 15px;
+    }
+
+    .mainHeading{
+        font-size: 40px;
+        font-weight: 750;
+        margin-left: 35px;
+        margin-bottom: 5px;
+        margin-top: -10px;
+        margin-top: 20px;
+    }
+    
+    .description{
+        width: 88%;
+        margin-left: 35px;
+        font-weight: 550;
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    
+    .offerList{
+        margin-bottom: 30px;
+    }
+
+    .listItem{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-weight: 550;
+        margin-left: 30px;
+        margin-bottom: 10px;
+    }
+    
+    .listIcon{
+        margin-right: 12px;
+    }
+
+    .form{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    label{
+        font-weight: 750;
+        margin-left: 30px;
+        margin-bottom: 0;
+        margin-top: 10px;
+    }
+
+
+    .emailInput{
+        width: 85%;
+        height: 44px;
+        margin-left: 30px;
+        border-radius: 5px;
+        border: 1px solid var(--Grey);
+        padding-left: 20px;
+        font-family: "Plus Jakarta Sans", sans-serif;
+        margin-top: 20px;
+        margin-bottom: -10px;
+    }
+
+    .btn{
+        width: 90%;
+        height: 48px;
+        background-color: var(--Dark_Slate_Grey);
+        color: var(--White);
+        font-family: "Plus Jakarta Sans", sans-serif;
+        font-weight: 550;
+        margin-left: 30px;
+        border-radius: 5px;
+        margin-top: 20px;
+        border: none;
+        margin-bottom: 30px;  
+    }
+
+    .btn:hover{
+        background: linear-gradient(204.47deg, #ff6a3a 0%, #ff527b 100%);
+        box-shadow: 0 1rem 2rem rgba(255, 97, 85, 0.5);
+        cursor: pointer;
+    }
+    .mainIllustration{
+        width: 100%;
+        height: 45%;
+        margin-right: auto;
+        background-image: url(assets/images/illustration-sign-up-mobile.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px;
+    }
+
+    .errorSpan{
+        color: red;
+        font-size: 14px;
+        margin-left: 130px;
+        visibility: hidden;
+    }
+
+    .successDivContainer{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--Charcoal_Grey);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 1000;
+        transition: visibility 0s, opacity 0.3s;
+        visibility: hidden;
+    }
+    
+    
+    
+    .successDiv{
+        width: 100%;
+        height: 100%;
+        background-color: var(--White);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 0px;
+    
+    }
+    
+    .successIcon{
+        margin-top: 30px;
+        margin-left: -260px;
+    }
+    
+    .successHeading{
+        font-size: 44px;
+        font-weight: 750;
+        margin-left: 40px;
+        line-height: 1;
+    }
+    
+    .successDesc{
+        font-weight: 500;
+        font-size: 14px;
+        margin-left: -15px;
+        width: 75%;
+        line-height: 1.6;
+    }
+    
+    .successBtn{
+        width: 350px;
+        height: 45px;
+        margin-top: 20px;
+        border-radius: 5px;
+        border: none;
+        background-color: var(--Dark_Slate_Grey);
+        color: var(--White);
+        font-family: "Plus Jakarta Sans", sans-serif;
+        margin-top: 75px;
+    }
+    
+    .successBtn:hover{
+        background: linear-gradient(204.47deg, #ff6a3a 0%, #ff527b 100%);
+        box-shadow: 0 1rem 2rem rgba(255, 97, 85, 0.5);
+        cursor: pointer;
+    }
+    
+    
+    .successSpan{
+        font-weight: 700;
+    }
+    
+
+}
